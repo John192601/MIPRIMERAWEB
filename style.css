@@ -1,0 +1,633 @@
+*{
+    font-family: "Madimi One", sans-serif;
+    font-size:18px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+  
+}
+ol{
+    z-index:20;
+}
+.checkmenu{
+    display:none;
+}
+.checkbtn{
+    display: none;
+}
+
+#contacto{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    
+   
+}
+a:visited{
+    text-decoration: none;
+}
+a li:hover{
+    color:black;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+body{
+    background-color: rgb(247, 247, 238);
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    background-color: hsla(190, 70%, 50%, 1);
+    position:fixed;
+    top: 0;
+}
+main{
+    margin-top: 95px;;
+}
+.logo{
+    width:90px;
+    
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ol.navi{
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    width: 82%;
+    margin-right:8px ;
+}
+li{
+   
+    
+    list-style: none;
+    text-align: center;
+    color:white;
+    font-size: 1.2rem;
+   
+}
+nav ol.icon{
+    display: flex;
+   
+    justify-content: center;
+    
+    gap:0px;
+}
+    
+.icon li{
+    width: 40px; 
+    padding: 0;
+    
+    
+}
+a i{
+    color: white;
+  
+}
+.acerca-de-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    width: 100%;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    background-image: url(imagenes/backimagen.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: static;
+
+}
+.acerda-de{
+    width:38%;
+    margin-right: 2%;
+    position: static;
+   
+}
+
+.acerda-de p{
+    color: white;
+    margin-right: 1px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    margin-bottom: 45px;
+ 
+}
+.acerda-de h2{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color:hsla(190, 87%, 72%, 1);
+}
+.acerda-de a{
+    color: white;
+    border: 1px white solid;
+    padding:8px;
+    background-color: hsla(190, 87%, 10%, 1);
+    position: static;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem ;
+    
+}
+.acerda-de a:hover{
+    background-color:hsla(190, 87%, 84%, 1);
+    cursor: pointer;
+    color:black;
+    transition: 1s ease;
+    border-radius: 10px;
+    
+    
+}
+.nav2{
+    display: none;
+}
+footer{
+    height:65px;
+    padding: 8px;
+}
+.parrafo2-container{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding: 5%;
+    gap: 18px;
+    margin: 45px auto;
+    
+}
+.hombre-random{
+    width: 35%;
+}
+.parrafo2{
+    width: 40%;
+    align-self: center;
+    font-size: 1.1rem;
+    text-align: end;
+}
+.acerca-imagen{
+    width: 100%;
+
+}
+.img1{
+    width: 100%;
+}
+.dos{
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
+}
+.titulo-trabajos{
+    font-size: 1.7rem;
+    margin: 15px;
+}
+.container-imagen2{
+    width: 100%;
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+}
+.cajitaimg{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.img2{
+    width: 90%;
+}
+.vermas{
+    margin-bottom: 30px;
+    background-color: hsla(190, 87%, 10%, 1);
+    color: white;
+    border: 1px white solid;
+    padding:8px;
+    background-color: hsla(190, 87%, 10%, 1);
+    position: static;
+   margin: 18px;
+    border-radius: 10px;
+    font-size: 1.8rem ;
+}
+.vermas:hover{
+    background-color:hsla(190, 87%, 84%, 1);
+    cursor: pointer;
+    color:black;
+    transition: 1s ease;
+    border-radius: 10px;
+}
+footer{
+    background-color: hsl(180, 58%, 53%);
+    height: 90px;
+}
+.footer-icon-container{
+    display: flex;
+    width: auto;
+    justify-content: end;
+    gap: 8px;
+}
+.footercopy{
+    transform: translatey(15px);
+    text-align: end;
+    font-size: 0.9rem;
+}
+.so{
+    font-size: 2.5rem;
+    padding: 0 8px;
+}
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .acerca-imagen{
+        width: 100%;
+    }
+    .img1{
+        width: 100%;
+    }
+    .navi{
+        display: none;
+        visibility: hidden;
+    }
+    .navsocial_icon{
+        display:none;
+    }
+    .checkbtn{
+        display: block;     
+    }
+    .checkbtn i{
+        font-size: 45px;
+        cursor: pointer;
+        
+    } 
+  
+    .acerda-de p{
+        color: white;
+        margin-right: 1px;
+        font-family: monospace;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-size: 0.8rem;
+     
+    }
+    .bienvenido{
+        font-family: "Kode Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 1.2rem !important;
+        color:hsla(190, 87%, 72%, 1);
+    }
+    .a-sobremi{
+        font-size: 0.8rem;
+        color: white;
+        border: 1px white solid;
+        padding:4px;
+        background-color: hsla(190, 87%, 10%, 1);
+        position: static;
+        top:28px;
+        left:30%;
+        border-radius: 10px;
+        font-size: 0.8rem !important;
+        z-index: 0 !important;
+       
+    }
+    .acerda-de a:hover{
+        background-color:rgb(21, 73, 83);
+        cursor: pointer;
+        color:black;
+        transition: 1s ease;
+        border-radius: 10px;
+        
+    }
+    .nav2{
+        display: flex;
+        flex-direction: column;
+        position:fixed;
+        background-color: hsl(180, 58%, 21%);
+        height: 100%;
+        width:100%;
+        
+        top:96px;
+        left:100%;
+        
+        border: 1px solid black;
+        transition: all 0.5s;
+        text-align: center;
+        justify-content: space-around;
+        visibility: hidden;
+        
+    }
+    .active{
+        visibility: visible;
+        left:0%;
+    }
+    .nav2 li{
+        display: block;   
+        height: 25%;
+        width: 100%;
+        position: relative;
+    }
+
+    .parrafo2{
+        
+        padding: 8px;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 30px;
+       
+    }
+ 
+    .acerca-imagen, .container-imagen2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img2{
+        width: 75%;
+    }
+    .imagen1,.imagen2{
+        text-align: center;
+        padding:8px;
+    }
+    footer{
+        background-color: hsl(180, 58%, 53%);
+    }    
+    .footer-icon-container{
+        display: flex;
+        width: auto;
+        justify-content: end;
+        gap: 8px;
+    }
+    .footercopy{
+ 
+        text-align: end;
+        font-size: 0.9rem;
+    }
+    .hombre-random{
+        
+        width: 80%;
+    }
+    .parrafo2-container{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 8% auto;
+    }
+    
+   
+    .parrafo2{
+        
+        padding: 15px;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 30px;
+       
+    }
+    footer{
+        background-color: hsl(180, 58%, 53%);
+    }    
+    .acerca-imagen, .container-imagen2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img2{
+        width: 55%;
+    }
+    .imagen1,.imagen2{
+        text-align: center;
+        padding:8px;
+    }
+    
+    .footer-icon-container{
+        display: flex;
+        width: auto;
+        justify-content: end;
+        gap: 8px;
+    }
+    .footercopy{
+        text-align: end;
+        font-size: 0.9rem;
+    }
+    .container-imagen2{
+        flex-direction: row;
+        gap: 5%;
+        flex-wrap: wrap;
+    }
+    
+    .cajitaimg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap:18px;
+        justify-content: space-around;
+    }
+    .dos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin:5% auto;
+    }
+    .titulo-trabajos{
+        font-size: 1.2rem;
+        font-family: "Kode Mono", monospace;
+    }
+    .vermas{
+        margin-bottom: 30px;
+        background-color: hsla(190, 87%, 10%, 1);
+        color: white;
+        border: 1px white solid;
+        padding:8px;
+        background-color: hsla(190, 87%, 10%, 1);
+        position: static;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 1.2rem ;
+    }
+    .vermas:hover{
+        background-color:hsla(190, 87%, 84%, 1);
+        cursor: pointer;
+        color:black;
+        transition: 1s ease;
+        border-radius: 10px;
+    }
+        
+    .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+       margin: 0 auto;
+        width: 80%;
+        padding: 50px;
+        margin-bottom: 35px;
+        
+      }
+      .form-row {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      
+      .form-row input[type="text"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+      }
+      
+      .form-row label {
+        margin-bottom: 3px;
+      
+      }
+      .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+   
+      
+}
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+  
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+   margin: 0 auto;
+    width: 40%;
+    height: 450px;
+    padding: 20px;
+    margin-bottom: 35px;}
+
+.form-row textarea {
+    width: 250px;
+  }
+.imagen2{
+    text-align: justify;
+    width: 80%;
+}
+.footercopy{
+    background-color: inherit;
+    margin-top: 0px;
+}
+
+
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: start;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row button {
+    margin: 20px auto; }
