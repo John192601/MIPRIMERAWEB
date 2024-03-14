@@ -112,7 +112,7 @@ a i{
 
 }
 .acerda-de{
-    width:38%;
+    width: 94%;
     margin-right: 2%;
     position: static;
    
@@ -140,7 +140,9 @@ a i{
     padding:8px;
     background-color: hsla(190, 87%, 10%, 1);
     position: static;
-    margin-left: 10px;
+    text-align: center;
+    margin: 0 25%;
+   
     border-radius: 10px;
     font-size: 1.2rem ;
     
@@ -403,6 +405,7 @@ footer{
         text-align: center;
         font-weight: 500;
         margin-bottom: 30px;
+        width: 80%;
        
     }
     footer{
@@ -477,16 +480,17 @@ footer{
         border-radius: 10px;
     }
         
-    .formulario {
+ 
+      .formulario {
         background-color: #f6f7f8;
         border: 1px solid #d6d9dc;
         border-radius: 3px;
-       margin: 0 auto;
-        width: 80%;
-        padding: 50px;
+        margin: 0 auto;
+        width: 90% !important; /* Ajustamos el ancho del formulario */
+        padding: 20px;
         margin-bottom: 35px;
-        
-      }
+        box-sizing: border-box; /* Aseguramos que el padding no aumente el tamaño total */
+    }
       .form-row {
         margin-bottom: 40px;
         display: flex;
@@ -506,25 +510,22 @@ footer{
       
       .form-row label {
         margin-bottom: 3px;
-      
-      }
-      .form-row button {
+        width: 100%; /* Ajustamos el ancho de las etiquetas */
+        padding-right: 0; /* Eliminamos el padding derecho */
+    }
+    
+    .form-row button {
         font-size: 16px;
         font-weight: bold;
-      
-      
         color: #ffffff;
         background-color: #5995da;
-      
-      
         border: none;
         border-radius: 3px;
-      
-      
         padding: 10px 40px;
         cursor: pointer;
-      }
-      
+        margin-top: 20px; /* Ajustamos el margen superior */
+        width: 100%; /* Ajustamos el ancho del botón */
+    }
       
       .form-row button:hover {
         background-color: #76aeed;
